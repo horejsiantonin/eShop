@@ -1,0 +1,257 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+
+body header {
+    background-color: #FF9999;
+}
+body header #x {
+    display: grid;
+    grid-template-columns: 5% 3% 3% 3% 3% 70% auto;
+    padding-left:2%
+}
+body header #x p{
+    margin-left:2%
+}
+body header #x img {
+    margin-left:5px;
+    margin-top:15px;
+    width:30px;
+    height:30px
+}
+/*body header #x #vypln{
+    width:75%
+}*/
+body header #x #y{
+    display:flex;
+}
+    body header #x #y select {
+        background-color: #FF9999;
+        border:none;
+        padding:5px
+    }
+body header #vyhledavani{
+    display:grid;
+    grid-template-columns:30% 40% 30%;
+    padding-bottom:2%
+    
+}
+body header #vyhledavani input {
+    text-align: left;
+    border-radius: 20px;
+    background-color: #FFAEAE;
+    padding:5px;
+    border:none
+}
+body header #vyhledavani #logo{
+    width: 200px;
+margin-left:25px
+}
+body header #vyhledavani #kosik {
+    margin-left:50%;
+    margin-right:50%
+}
+
+
+body #nav {
+    display: flex;
+    justify-content: center;
+    padding:2%
+}
+body content #nav select {
+    background-color: white;
+    border:none;
+    padding:5px
+}
+content #obrazek img {
+    width: 60%;
+    height: 60%;
+    justify-content: center;
+}
+content #Nadpis{
+    text-align:center
+}
+content #Sort {
+    display: flex;
+    justify-content: center;
+}
+content #Sort a {
+    padding-left: 5px; 
+    padding-right:5px;
+    text-decoration:none;
+    color:black;
+}
+content #Sort a:hover {
+    color: #FF9999;
+}
+content #Products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+content #Reklamy {
+    display: flex;
+    justify-content: center;
+}
+content #Reklamy img{
+    margin:5px
+}
+content #MautinkovyVlasky {
+display: grid;
+grid-template-columns: 30% 30% 30%;
+justify-content: center;
+grid-gap: 10px;
+}
+content #MautinkovyVlasky .Ousko {
+    padding:5%;
+    display:flex;
+}
+content #MautinkovyVlasky .Ousko .Popis img{
+    width:100%;
+    height:100%;
+
+}
+content #MautinkovyVlasky .Ousko .Popis a {
+    text-decoration:none;
+    color:black
+}
+content #MautinkovyVlasky .Ousko img{
+    width:20%
+}
+content #Subscribe {
+    position:center;
+    background-color: #FF9999;
+    width:100%;
+    text-align:center;
+    margin-top:4%;
+    padding:10% 0 10%
+}
+content #Subscribe input{
+    width:20%;
+    border-radius:5px;
+    border:none;
+    height:35px
+}
+content #Subscribe label{
+    color:white
+}
+footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:20px;
+    padding:0 5% 0 5%;
+    background-color:lightgrey
+}
+footer div a{
+    text-decoration:none;
+    color:black
+}
+footer div .admins{
+    display:flex;
+    padding:5px
+}
+/*------------------------------------------------------------------------------*/
+/*20 regex 19*/
+content {
+    text-align: center;
+}
+content #mainPic{
+    width:100%;
+    position:relative
+}
+content .nav1{
+    display:flex;
+    justify-content:center;
+    margin:5% 10% 5% 10%
+}
+content .nav1 div{
+    text-align:left;
+    margin: 1%
+}
+/*------------------------------------------------------------------------------*/
+/*p{
+    font-size:xx-large
+}*/
+form{
+    display:grid;
+    grid-template-columns:50% 50%;
+    font-size:larger;
+    padding:5% 15% 5% 15%;
+}
+form input{
+    width:70%;
+    padding:5px;    
+}
+form textarea{
+    width:71%;
+    height:200px
+}
+.p{
+    font-size:xx-large
+}
+form input[type=submit] {
+    background-color: #FF9999;
+    border:none;
+    width:auto;
+    color:white;
+    padding:10px
+}
+form #Info{
+    background-color:lightgrey;
+    padding:20px
+}
+form #Info p{
+    font-size:small
+}
+form #Info a{
+    text-decoration:none;
+    color:black
+}
+/*------------------------------------------------------------------------------*/
+
+content #News{
+    padding:0 10% 0 10%;
+    display:grid;
+    grid-template-columns:80% 20%;
+    text-align:left;
+    margin:15px;
+    grid-gap:10px
+}
+content #News input[type=button]{
+    background-color:grey;
+    color:black;
+    padding:10px;
+    border:none;
+    margin-bottom:10px
+}
+content #News input[type=button]:hover {
+    background-color: #FF9999;
+    color: white
+}
+content #News .Popis a {
+    color: black;
+    text-decoration: none;
+    font-size: x-large;
+    padding:0px;
+}
+content #News .Popis a:hover {
+    color: #FF9999
+}
+content #News #Search{
+    background-color:lightgray;
+    padding:10px;
+    margin-top:80%
+}
+content #News #Search a{
+    text-decoration:none;
+    color:black;
+    font-size:large;
+}
+content #News #Search img{
+    width:50%
+}
+content #News #Search input[type=button]{
+    background-color:lightgray;
+    text-align:center
+}

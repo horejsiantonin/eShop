@@ -1,0 +1,31 @@
+﻿@using WebApplication1.Models
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<table class="table table-striped">
+    <tr>
+        <th>Jmeno</th>
+        <th>Prijmeni</th>
+        <th>Stari</th>
+    </tr>
+    @foreach (Person item in ViewBag.Data)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Surname</td>
+            <td>
+                @if (item.Age < 20)
+                {
+                                <span>Mlady</span>
+                }
+                else
+                {
+                                <span>Stary</span>
+                }
+            </td>
+        </tr>
+    }
+</table>

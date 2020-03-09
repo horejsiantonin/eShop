@@ -1,0 +1,37 @@
+﻿@*@model WebApplication1.Models.Person*@
+@*@{
+    ViewBag.Title = "Detail";
+}*@
+
+<h2>Detail</h2>
+
+
+@*
+    <form method="post">
+        <input type="text" name="Name" value="@ViewBag.Person.Name" />
+        <input type="text" name="Surname" value="@ViewBag.Person.Surname" />
+        <input type="text" name="Age"value="@ViewBag.Person.Age" />
+        <button type="submit">Ulozit</button>
+    </form>
+*@
+
+@*@using (Html.BeginForm())
+{
+    <div>
+        @Html.LabelFor(x => x.Name)
+        @Html.EditorFor(x => x.Name)
+        @Html.ValidationMessageFor(x => x.Name)
+    </div>
+    <div>
+        @Html.LabelFor(x => x.Surname)
+        @Html.EditorFor(x => x.Surname)
+        @Html.ValidationMessageFor(x => x.Surname)
+    </div>
+    <div>
+        @Html.LabelFor(x => x.Age)
+        @Html.EditorFor(x => x.Age)
+        @Html.ValidationMessageFor(x => x.Age)
+    </div>
+
+    <button type="submit">Ulozit</button>
+}*@

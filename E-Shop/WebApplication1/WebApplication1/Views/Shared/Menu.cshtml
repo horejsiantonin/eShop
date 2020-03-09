@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewBag.Title = "Menu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+    <content>
+        <div id="News">
+            <div>
+                @RenderBody();
+            </div>
+            <div id="Search">
+                <h3>Search</h3>
+                <input type="search" name="name" value="" placeholder="Search out store" />
+                <button>search</button>
+                <br />
+                <br />
+                <h3>Custom menu</h3>
+                <a href="http://localhost:60828/Home/Index">Home</a>
+                <br />
+                <a href="#">Shop</a>
+                <br />
+                <a href="#">Products</a>
+                <br />
+                <a href="#">Blog</a>
+                <br />
+                <a href="http://localhost:60828/Home/About">About</a>
+                <br />
+                <a href="http://localhost:60828/Home/Contact">Contact</a>
+                <h3>Recent post</h3>
+                <a href="~/Home/Detail1">
+                    <img src="~/Images/BigBoy.PNG" alt="Alternate Text" />
+                    <p>Adam Novák</p>
+                </a>
+                <hr />
+                <a href="~/Home/Detail2">
+                    <img src="~/Images/BigBoy2.PNG" alt="Alternate Text" />
+                    <p>Martin Novák</p>
+                </a>
+                <hr />
+                <a href="~/Home/Detail3">
+                    <img src="~/Images/BigBoy3.PNG" alt="Alternate Text" />
+                    <p>Vlasatice</p>
+                </a>
+                <hr />
+                <h3>Archive</h3>
+                <h3>January 2020</h3>
+                <p>Lorem ipsum dolor sit amet,</p>
+                <p>Lorem ipsum dolor sit amet,</p>
+                <p>Lorem ipsum dolor sit amet,</p>
+                <p>Lorem ipsum dolor sit amet,</p>
+                <p>Lorem ipsum dolor sit amet,</p>
+                <p>Lorem ipsum dolor sit amet,</p>
+                <p>Lorem ipsum dolor sit amet,</p>
+                <p>Lorem ipsum dolor sit amet,</p>
+                <p>Lorem ipsum dolor sit amet,</p>
+                <p>Lorem ipsum dolor sit amet,</p>
+                <h3>Tags</h3>
+                <input type="button" name="name" value="Best selling" />
+                <input type="button" name="name" value="Collection" />
+                <input type="button" name="name" value="Dress" />
+                <input type="button" name="name" value="Fashion" />
+                <input type="button" name="name" value="Men" />
+            </div>
+        </div>
+    </content>

@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/Site.css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script src="JS/jquery.min.js"></script>
+    <script src="JS/bootstrap-select.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <link href="Bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="Bootstrap/bootstrap-select.css" rel="stylesheet" />
+
+    <link href="Bootstrap/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    @{
+        ViewBag.Title = "Contact";
+    }
+        <header>
+            <div id="x">
+                <p>Follow us:</p>
+                <img src="~/Images/fb.jpg">
+                <img src="~/Images/tt.jpg">
+                <img src="~/Images/yt.jpg">
+                <img src="~/Images/ig.jpg">
+                <div id="vypln"></div>
+                <div id="y" style="float:right">
+                    <select class="col-md-pull-5">
+                        <option>My account</option>
+                        <option>Sign out</option>
+                    </select>
+                    <select>
+                        <option>USD</option>
+                        <option>CZK</option>
+                    </select>
+                </div>
+            </div>
+            <div id="vyhledavani">
+                <img id="logo" src="~/Images/Výstřižek.PNG" />
+                <input type="text" style="" placeholder="Search for products" />
+                <img id="kosik" src="~/Images/kosik.PNG" />
+            </div>
+        </header>
+        <content>
+            <div id="nav">
+                <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                    <option disabled selected value> -- select an option -- </option>
+                    <option value="http://localhost:60828/Home/Index">Home</option>
+                    <option value="http://localhost:60828/Home/About">About</option>
+                    <option value="http://localhost:60828/Home/Contact">Contact</option>
+                    <option value="http://localhost:60828/Home/News">News</option>
+                </select>
+                <select class="col-md-pull-5">
+                    <option>Shop</option>
+                </select>
+                <select class="col-md-pull-5">
+                    <option>Products</option>
+                </select>
+                <select class="col-md-pull-5">
+                    <option>Blog</option>
+                </select>
+                <select class="col-md-pull-5">
+                    <option>About</option>
+                </select>
+                <select class="col-md-pull-5">
+                    <option>Contact</option>
+                </select>
+            </div>
+        </content>
+    </body>
+    <div >
+        @RenderBody()
+    </div>
+    <footer>
+        <div>
+            <p style="font-size:30px">DEBRA</p>
+            <h3>Adress:</h3>
+            <p>4710-4890 Brackinbridge St, UK Burlington, VT 05401</p>
+            <h3>Need help?</h3>
+            <a href="tel:+13115552368">Call: +131 155 523 68</a>
+            <h3>Email:</h3>
+            <a href="mailto:example@example.com">Example@example.om</a>
+        </div>
+        <div>
+            <h3>About us:</h3>
+            <a href="">About us</a>
+            <br />
+            <a href="">Store location</a>
+            <br />
+            <a href="">Contact</a>
+            <br />
+            <a href="">Orders tracking</a>
+            <br />
+        </div>
+        <div>
+            <h3>Usefull links</h3>
+            <a href="">Returns</a>
+            <br />
+            <a href="">Support policy</a>
+            <br />
+            <a href="">Size guide</a>
+            <br />
+            <a href="">FAQs</a>
+            <br />
+        </div>
+        <div>
+            <h3>Latest blogs</h3>
+            <div class="admins">
+                <img src="~/Images/fb1.PNG" />
+                <div>
+                    <p>Adam Novák</p>
+                    <p>by <b>Debra debo admin</b> • 15 jan 20</p>
+                </div>
+            </div>
+            <div class="admins">
+                <img src="~/Images/fb2.PNG" />
+                <div>
+                    <p>Adam Novák</p>
+                    <p>by <b>Debra debo admin</b> • 15 jan 20</p>
+                </div>
+            </div>
+        </div>
+        <hr />
+
+    </footer>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</html>

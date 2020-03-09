@@ -1,0 +1,166 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+    
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/Site.css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script src="JS/jquery.min.js"></script>
+    <script src="JS/bootstrap-select.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <link href="Bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="Bootstrap/bootstrap-select.css" rel="stylesheet" />
+
+    <link href="Bootstrap/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <content>
+        <div id="obrazek">
+            <img src="~/Images/MP.PNG" />
+            <img src="~/Images/Vyhody.PNG" />
+        </div>
+        <h1 id="Nadpis">Arrivals Product</h1>
+        <div id="Sort">
+            <a href=""><h3>Top Sell</h3></a>
+            <a href=""><h3>Best Sellers</h3></a>
+            <a href=""><h3> New Arrivals</h3></a>
+        </div>
+        <div id="Products">
+            <div class="Image">
+                <img src="~/Images/Products/1.PNG" />
+                <h2>Dummy product name</h2>
+                <img src="~/Images/Products/Rating.PNG" />
+            </div>
+            <div class="Image">
+                <img src="~/Images/Products/2.PNG" />
+                <h2>Dummy product name</h2>
+                <img src="~/Images/Products/Rating.PNG" />
+            </div>
+            <div class="Image">
+                <img src="~/Images/Products/3.PNG" />
+                <h2>Dummy product name</h2>
+                <img src="~/Images/Products/Rating.PNG" />
+            </div>
+            <div class="Image">
+                <img src="~/Images/Products/4.PNG" />
+                <h2>Dummy product name</h2>
+                <img src="~/Images/Products/Rating.PNG" />
+            </div>
+            <div class="Image">
+                <img src="~/Images/Products/5.PNG" />
+                <h2>Dummy product name</h2>
+                <img src="~/Images/Products/Rating.PNG" />
+            </div>
+            <div class="Image">
+                <img src="~/Images/Products/6.PNG" />
+                <h2>Dummy product name</h2>
+                <img src="~/Images/Products/Rating.PNG" />
+            </div>
+            <div class="Image">
+                <img src="~/Images/Products/7.PNG" />
+                <h2>Dummy product name</h2>
+                <img src="~/Images/Products/Rating.PNG" />
+            </div>
+            <div class="Image">
+                <img src="~/Images/Products/8.PNG"/>
+                <h2>Dummy product name</h2>
+                <img src="~/Images/Products/Rating.PNG" />
+            </div>
+        </div>
+        <div id="Reklamy">
+            <img src="~/Images/Add1.PNG" />
+            <img src="~/Images/Add2.PNG" />
+        </div>
+        <div id="MautinkovyVlasky">
+            <h3>Top rated</h3>
+            <h3>Featured</h3>
+            <h3>Best seller products</h3>
+            <div class="Ousko">
+                <img src="~/Images/Products/1.PNG" />
+                <div class="Popis">
+                    <p>Dummy product name</p>
+                    <img src="~/Images/Products/Rating.PNG" />
+                    <br />
+                    <a href="">$79,00</a>
+                </div>
+            </div><div class="Ousko">
+                <img src="~/Images/Products/2.PNG" />
+                <div class="Popis">
+                    <p>Dummy product name</p>
+                    <img src="~/Images/Products/Rating.PNG" />
+                    <br />
+                    <a href="">$79,00</a>
+                </div>
+            </div><div class="Ousko">
+                <img src="~/Images/Products/3.PNG" />
+                <div class="Popis">
+                    <p>Dummy product name</p>
+                    <img src="~/Images/Products/Rating.PNG" />
+                    <br />
+                    <a href="">$79,00</a>
+                </div>
+            </div><div class="Ousko">
+                <img src="~/Images/Products/1.PNG" />
+                <div class="Popis">
+                    <p>Dummy product name</p>
+                    <img src="~/Images/Products/Rating.PNG" />
+                    <br />
+                    <a href="">$79,00</a>
+                </div>
+            </div><div class="Ousko">
+                <img src="~/Images/Products/1.PNG" />
+                <div class="Popis">
+                    <p>Dummy product name</p>
+                    <img src="~/Images/Products/Rating.PNG" />
+                    <br />
+                    <a href="">$79,00</a>
+                </div>
+            </div><div class="Ousko">
+                <img src="~/Images/Products/1.PNG" />
+                <div class="Popis">
+                    <p>Dummy product name</p>
+                    <img src="~/Images/Products/Rating.PNG" />
+                    <br />
+                    <a href="">$79,00</a>
+                </div>
+            </div><div class="Ousko">
+                <img src="~/Images/Products/1.PNG" />
+                <div class="Popis">
+                    <p>Dummy product name</p>
+                    <img src="~/Images/Products/Rating.PNG" />
+                    <br />
+                    <a href="">$79,00</a>
+                </div>
+            </div><div class="Ousko">
+                <img src="~/Images/Products/1.PNG" />
+                <div class="Popis">
+                    <p>Dummy product name</p>
+                    <img src="~/Images/Products/Rating.PNG" />
+                    <br />
+                    <a href="">$79,00</a>
+                </div>
+            </div><div class="Ousko">
+                <img src="~/Images/Products/1.PNG" />
+                <div class="Popis">
+                    <p>Dummy product name</p>
+                    <img src="~/Images/Products/Rating.PNG" />
+                    <br />
+                    <a href="">$79,00</a>
+                </div>
+            </div>
+        </div>
+        <div id="Subscribe">
+            <h1>Sign up for newsletters</h1>
+            <h2>Be the first to know. Sign up for newsletter today</h2>
+            <input type="text" placeholder="Your email adress" id="Sub" />
+            <button for="Sub">Subscribe</button>
+        </div>
+    </content>
+</body>
+</html>
